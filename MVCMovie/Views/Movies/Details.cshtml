@@ -1,10 +1,10 @@
 ﻿@model MVCMovie.Models.Movie
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Details of The Movie";
 }
 
-<h2>Details</h2>
+<h2>Details of the Movie</h2>
 
 <div>
     <h4>Movie</h4>
@@ -45,6 +45,9 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
-    @Html.ActionLink("Back to List", "Index")
+
+    <span class="btn btn-primary" id="CreateButton"> @Html.ActionLink("Back to List", "Index")</span> |
+    <span class="btn btn-warning" id="CreateButton">
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ID })
+    </span>
 </p>

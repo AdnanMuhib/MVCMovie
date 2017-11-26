@@ -1,16 +1,16 @@
 ﻿@model MVCMovie.Models.Movie
 
 @{
-    ViewBag.Title = "Edit";
+    ViewBag.Title = "Edit Movie";
 }
 
-<h2>Edit</h2>
+<h2>Edit Movie Details</h2>
 
 
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
         <h4>Movie</h4>
         <hr />
@@ -57,7 +57,7 @@
     </div>
 }
 
-<div>
+<div class="btn btn-primary" id="CreateButton">
     @Html.ActionLink("Back to List", "Index")
 </div>
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - MVC Movie Store</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -32,8 +32,9 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
+        <span class="nav navbar-inverse"></span>
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - MVC Movie ASP.NET Application by <a href="https://www.linkedin.com/in/adnanmuhib" class="btn btn-success" id="CreateButton" > Muhammad Adnan</a></p>
         </footer>
     </div>
 

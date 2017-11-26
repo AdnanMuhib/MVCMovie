@@ -13,6 +13,7 @@ namespace MVCMovie.Models
         public DateTime ReleaseDate { get; set; }
         public string Genre { get; set; }
         public Decimal Price { get; set; }
+        public String Rating { set; get; }
     }
     public class MovieDBContext:DbContext {
         public DbSet<Movie> Movies { get; set; }

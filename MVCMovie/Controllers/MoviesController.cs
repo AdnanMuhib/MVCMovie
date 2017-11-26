@@ -35,6 +35,14 @@ namespace MVCMovie.Controllers
         // Get: Movies by Name and Genre
         public ActionResult Index(string movieGenre, string searchString)
         {
+            Movie myMovie = new Movie();
+            myMovie.ID = 5;
+            myMovie.Title = "Akkar Bakkar";
+            myMovie.ReleaseDate = DateTime.Parse("10-10-2017");
+            myMovie.Genre = "Action";
+            myMovie.Price = 20.2M;
+
+
             var GenreLst = new List<string>();
 
             var GenreQry = from d in db.Movies

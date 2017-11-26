@@ -1,13 +1,15 @@
 ﻿@model IEnumerable<MVCMovie.Models.Movie>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Movies";
 }
 
 <h2>Movies</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    <span class="btn btn-success" id="CreateButton">
+        @Html.ActionLink("Add New Movie", "Create")
+    </span>
 
     @*adding searching capability for different Movies*@
 
@@ -16,7 +18,7 @@
     <p>
         Genre: @Html.DropDownList("movieGenre", "All")
         Title: @Html.TextBox("SearchString")
-        <input type="submit" value="Filter" />
+        <input type="submit" value="SEARCH" class="btn btn-info"/>
     </p>
     }
 </p>
@@ -52,9 +54,17 @@
             @Html.DisplayFor(modelItem => item.Price)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+            <span class="btn btn-warning" id="CreateButton">
+                @Html.ActionLink("Edit", "Edit", new { id = item.ID })
+            </span>
+            |
+            <span class="btn btn-primary" id="CreateButton">
+                @Html.ActionLink("Details", "Details", new { id = item.ID })
+            </span>
+             |
+            <span class="btn btn-danger" id="CreateButton">
+                @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+            </span>
         </td>
     </tr>
 }
