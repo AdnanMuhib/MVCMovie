@@ -2,12 +2,81 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+<div class="container" style="width:100% !important; margin-top:20px;">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="~/Images/AngryBirds.jpg">
+                <div class="carousel-caption">
+                    <h3>
+                        Angry Birds
+                    </h3>
+                </div>
+            </div>
+            <!-- End Item -->
+            <div class="item">
+                <img src="~/Images/KungFuPanda.jpg">
+                <div class="carousel-caption">
+                    <h3>
+                        Kung Fu Panda
+                    </h3>
+                </div>
+            </div>
+            <!-- End Item -->
+            <div class="item">
+                <img src="~/Images/FreeBirds.jpg">
+                <div class="carousel-caption">
+                    <h3>
+                        Free Birds
+                    </h3>
+                </div>
+            </div>
+            <!-- End Item -->
+            <div class="item">
+                <img src="~/Images/Cat.jpg">
+                <div class="carousel-caption">
+                    <h3>
+                        Cute Cat
+                    </h3>
+                </div>
+            </div>
+            <!-- End Item -->
+        </div>
+        <!-- End Carousel Inner -->
+        <ul class="nav nav-pills nav-justified">
+            <li data-target="#myCarousel" data-slide-to="0" class="active">
+                <a href="#">
+                    Angry Birds<small>
+                        Animated Movie
+                    </small>
+                </a>
+            </li>
+            <li data-target="#myCarousel" data-slide-to="1">
+                <a href="#">
+                    Kung Fu Panda<small>
+                        Animated Movie
+                    </small>
+                </a>
+            </li>
+            <li data-target="#myCarousel" data-slide-to="2">
+                <a href="#">
+                    Free Birds<small>
+                        Animated Movie
+                    </small>
+                </a>
+            </li>
+            <li data-target="#myCarousel" data-slide-to="3">
+                <a href="#">
+                    Cute Cat<small>
+                        Unsplash Image
+                    </small>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- End Carousel -->
 </div>
-
 <div class="row">
     <div class="col-md-4">
         <h2>Getting started</h2>

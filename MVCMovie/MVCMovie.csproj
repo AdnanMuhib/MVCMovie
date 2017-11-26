@@ -195,6 +195,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\AngryBirds.jpg" />
+    <Content Include="Images\Cat.jpg" />
+    <Content Include="Images\FreeBirds.jpg" />
+    <Content Include="Images\KungFuPanda.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
